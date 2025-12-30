@@ -9,7 +9,7 @@ while n<=min(a,b):
         b=b//n
     else:
         n=n+1
-print("GCD is",gcd)
+print(" GCD is",gcd)
 
 
 
