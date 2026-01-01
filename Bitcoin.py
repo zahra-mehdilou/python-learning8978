@@ -7,4 +7,3 @@ price = data["bitcoin"]["usd"]
 print("current price is:", price)
 if price<100000:
     print("Time to buy")
-
