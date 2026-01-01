@@ -1,7 +1,7 @@
 import requests
 import time
 
-while price<95000:
+while True:
     url = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd"
     response = requests.get(url)
     data = response.json()
@@ -9,7 +9,8 @@ while price<95000:
     print("current price is:", price)
     if price<800000:
         print("Time to buy")
-    else:
+    elif price>90000:
         print("Wait!")
+    elif price>100000:
+        break
     time.sleep(600)
-
