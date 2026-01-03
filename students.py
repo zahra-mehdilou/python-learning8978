@@ -9,6 +9,10 @@ for i in range(number):
         score=int(input(f"Enter the valid score of {name}: "))
     students[name]=score
 print(students)
+max_score=max(students, key=students.get)
+print (f" 😇 {students[max_score]} is the highest score and belongs to {max_score} ")
+min_score=min(students, key=students.get)
+print (f" ☹️ {students[min_score]} is the lowest score and belongs to {min_score} ")
 while True:
  name_score=(input("Enter the name you want to know their score:"))
  if name_score == "exit" :
